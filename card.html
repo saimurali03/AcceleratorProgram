@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 2 — Borders & Backgrounds</title>
+  <!-- TODO: Students — add CSS here (internal <style>) OR link an external CSS file.
+       Requirements for .card:
+       - Rounded corners: 10px radius
+       - Background image: use assets_user_photo.png
+       - White overlay using rgba() on top of the image behind the text
+  -->
+    <style>
+        .card {
+          position: relative;
+          width: 320px;
+          height: 400px;
+          margin: 20px auto;
+          border-radius: 10px;
+          overflow: hidden;
+          background: url("assets_user_photo.png") center/cover no-repeat;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* overlay with white rgba */
+        .card .overlay {
+          position: absolute;
+          inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+          background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 1rem;
+        }
+
+        .card .name {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          color: #111;
+        }
+
+        .card .role {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 1rem;
+        }
+
+        .card .bio {
+          font-size: 0.9rem;
+          color: #444;
+          line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercise 2: Profile Card</h1>
+
+  <!-- Card container to be styled by students -->
+  <article class="card">
+    <div class="overlay">
+      <h2 class="name">Sai Muralidhar Raju</h2>
+      <p class="role">Full Stack Developer</p>
+      <p class="bio">
+        <p class="bio">
+            Passionate web development student eager to build creative, user-friendly websites.  
+            Always learning new front-end technologies to improve design and performance.
+        </p>
+    </div>
+  </article>
+
+  <!-- Hint (optional): The overlay can be a child element with a background like rgba(255,255,255,0.85). -->
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 3 — Display & Positioning</title>
+  <!-- TODO: Students — add CSS here (internal <style>) OR link an external CSS file.
+       Requirements:
+       A) Create a vertical menu by converting inline <a> links to block-level elements.
+       B) Create a horizontal menu using inline-block links.
+       C) Position the .login-btn absolutely at the top-right corner of the header.
+  -->
+  <style>
+    header{
+      background-color:rgb(39, 139, 239);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      position: relative;
+    }
+    .login-btn{
+      position: absolute;
+      top: 11px;
+      right: 11px;
+      background-color: aliceblue;
+      color: rgb(39, 139, 239);
+      border-radius: 5px;
+      padding: 10px;
+      font-weight: 50;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    main{
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    section{
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .vertical a{
+      display: block;
+      text-decoration: none;
+      color: rgb(11, 6, 6);
+      font-size: 18px;
+      margin: 10px 0 ;
+      padding: 6px;
+    }
+    .horizontal a{
+      display: inline block;
+      text-decoration: none;
+      padding: 6px;
+      background-color: rgb(254, 244, 244);
+      color: black;
+      margin: 4px;
+      font-size: 16px;
+      border-radius: 5px;
+
+    }
+  </style>
+       
+</head>
+<body>
+  <header>
+    <h1>Exercise 3: Display & Positioning</h1>
+    <div class="login-btn">Login</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Vertical Menu (Block Links)</h2>
+      <nav class="vertical">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+
+    <section>
+      <h2>Horizontal Menu (Inline-Block Links)</h2>
+      <nav class="horizontal">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

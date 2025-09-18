@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Exercise</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    /* Menu links shared style */
+    .menu a {
+      text-decoration: none;
+      color: white;
+      background: steelblue;
+      padding: 10px 15px;
+      margin: 3px;
+      border-radius: 5px;
+    }
+
+    /* Vertical menu (block) */
+    .vertical a {
+      display: block; /* stacked vertically */
+    }
+
+    /* Horizontal menu (inline-block) */
+    .horizontal a {
+      display: inline-block; /* side by side */
+    }
+
+    /* Login button */
+    .login {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: crimson;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login">Login</div>
+
+  <h1>Menu Exercise</h1>
+
+  <h2>Vertical Menu (Block)</h2>
+  <div class="menu vertical">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <h2>Horizontal Menu (Inline-Block)</h2>
+  <div class="menu horizontal">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</body>
+</html>

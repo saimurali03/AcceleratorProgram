@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact| My Website</title>
+    </head>
+    <body>
+        <h1>Contact</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <section>
+            <form action="/submit-contact" method="post">
+            <label for="name" >Name:</label><br>
+            <input type="text" id="name" name="user_name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="user_email"><br><br>
+
+            <label for="phone">Contact Number:</label><br>
+            <input type="tel" id="phone" name="user_phone"><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="user_message" rows="5" cols="30"></textarea> <br><br>
+
+            <input type="submit" value="Send Message">
+
+        </form>
+        </section>
+        
+    </body>
+</html>
