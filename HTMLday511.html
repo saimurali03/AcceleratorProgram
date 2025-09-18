@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Registration Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f6f8fb;
+                padding: 20px;
+            }
+            form {
+                max-width: 400px;
+                margin: auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+            label {
+                display: block;
+                margin-top: 12px;
+                font-weight: bold;
+            }
+            input, select {
+                width: 100%;
+                padding: 8px;
+                margin-top: 4px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input:invalid, select:invalid {
+                border: 2px solid rgb(36, 27, 27);
+                padding: 6px;
+            }
+            button {
+                margin-top: 16px;
+                padding: 10px;
+                width: 100%;
+                background: #007BFF;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+            button:hover {
+                background: #0056b3;
+            }
+            fieldset {
+                margin-top: 16px;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" required><br><br>
+
+            <fieldset>
+                <legend>Course Selection</legend>
+                <label for="course">Choose a course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select a course --</option>
+                    <option value="webdev">Web Development</option>
+                    <option value="datasci">Data Science</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select>
+            </fieldset><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
